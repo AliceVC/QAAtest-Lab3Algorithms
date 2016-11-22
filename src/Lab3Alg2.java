@@ -7,8 +7,17 @@ public class Lab3Alg2 {
         int a = Integer.valueOf(ReadUtils.readValueFromConsole());
         int b = Integer.valueOf(ReadUtils.readValueFromConsole());
 
-        int sum = b;
-        for(int i = 0; i < a; i++ ) {
+        int max;
+        int min;
+        if(a < b) {
+            max = b;
+            min = a;
+        } else {
+            max = a;
+            min = b;
+        }
+        int sum = max;
+        for(int i = 0; i < min; i++ ) {
             sum = sum + 1;
         }
         System.out.println(a + " + " + b + " = " + sum);
