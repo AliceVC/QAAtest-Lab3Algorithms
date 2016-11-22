@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class Lab3Algorithms {
     public static void main(String[] args) {
 
+        readIntAndCheckNegative();
+    }
+
+    public static void readIntAndCheckNegative() {
         int number = Integer.valueOf(ReadUtils.readValueFromConsole());
         if (number < 0) {
             System.out.println("Negative");
